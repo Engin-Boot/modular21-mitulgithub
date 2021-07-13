@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 
-namespace TelCo.ColorCoder
+namespace ConsoleApp1
 {
     class ColorPair
     {
@@ -15,7 +15,7 @@ namespace TelCo.ColorCoder
         }
         public static int GetPairNumberFromColor(ColorPair pair)
         {
-            
+            // Find the major color in the array and get the index
             int majorIndex = -1;
             for (int i = 0; i < Program.colorMapMajor.Length; i++)
             {
@@ -26,7 +26,7 @@ namespace TelCo.ColorCoder
                 }
             }
 
-      
+            // Find the minor color in the array and get the index
             int minorIndex = -1;
             for (int i = 0; i < Program.colorMapMinor.Length; i++)
             {
